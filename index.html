@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop ,Functions</title>
+</head>
+<body>
+    <h1>While Loop ,Functions:</h1>
+    <p>You can view the result. Rightclick on the page, click inspect,then click on console to see the result.</p>
+    <script>
+        // while loop (notfixed), function and arrays
+let j=0
+while(j<=10)
+{
+    console.log(j)
+    j=j+1
+}
+let age=prompt("Enter your age")
+age=Number(age)
+while(age<=18)
+{
+    age=prompt("Enter your age again")
+    age=Number(age)
+}
+// Functions
+function greet()
+{
+console.log("yes,I am greet called")
+}
+    greet()
+    greet()
+    greet()
+    greet()
+    greet()
+    greet()
+function sum()
+{
+ let a=5
+ let b=6  
+ let result=a+b 
+ console.log(result)
+}
+sum()
+sum()
+sum()
+// function parameters
+function sumparameters(a,b)
+{
+ let result=a + b 
+ console.log(result)
+}
+// function arguments
+sumparameters(3,11)
+sumparameters(19,3)
+sumparameters(319,193)
+function mul(num1,num2,num3)
+{
+    let result=num1*num2*num3
+    console.log(result)
+}
+mul(3,5,7)
+mul(19,21,23)
+mul(11,13,15)
+function multiply(num1,num2,num3)
+{
+    let result=num1*num2*num3
+    return result
+}
+let res =multiply(3,4,5)
+// console.log("this is multiply",res)
+if(res>100)
+{
+    alert("Invalid")
+} 
+   else
+{
+    alert("valid")
+}
+function calculatePercentage(obtMarks,totalMarks)
+{
+    let percentage = obtMarks * 100 /totalMarks
+    return percentage
+}
+let per =calculatePercentage(877,1100)
+if(per>90)
+{
+    console.log("Grade A")
+}
+else
+{
+    console.log("Grade B ")
+}
+
+    </script>
+</body>
+</html>
